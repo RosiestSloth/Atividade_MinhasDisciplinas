@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* Importando fontes já utilizadas no projeto */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
+
+:root {
+    --fundo: #181f2a;
+    --cor-Principal: #f7df1e;
+    --texto: #222;
+    --destaque: #ffe066;
+    --container: #fffbe7;
+    --borda: #e2c300;
+}
+
+body {
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--cor-Principal);
+    color: #222;
+    text-align: center;
+    padding: 30px 0 15px 0;
+    box-shadow: 0 2px 8px #0001;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8em;
+    font-weight: 800;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: var(--container);
+    border-radius: 10px;
+    box-shadow: 0 0 12px #0002;
+    padding: 30px 25px;
+    border: 1.5px solid var(--borda);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-Principal);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+}
+
+ul,
+p {
+    font-size: 1.08em;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+pre {
+    background: #222;
+    color: #f7df1e;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 1em;
+    margin-bottom: 18px;
+}
+
+code {
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    font-size: 1em;
+}
+
+a {
+    color: #222;
+    background: var(--destaque);
+    padding: 2px 7px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+a:hover {
+    background: var(--cor-Principal);
+}
+
+footer {
+    background: var(--cor-Principal);
+    color: #222;
+    text-align: center;
+    padding: 18px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-top: 40px;
+    border-top: 1.5px solid var(--borda);
+}
