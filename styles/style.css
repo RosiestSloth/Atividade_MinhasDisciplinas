@@ -31,6 +31,7 @@
 
 html,
 body {
+    background-color: var(--fundo);
     overflow-x: hidden;
     max-width: 100vw;
     scroll-behavior: smooth;
@@ -82,9 +83,19 @@ header {
 }
 
 main {
+    background-color: white;
     max-width: 1200px;
     margin: auto;
     padding: 20px;
+}
+
+
+section#primeiro {
+    background: var(--conteiners);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 8px rgba(96, 139, 218, 0.08);
 }
 
 img {
@@ -154,12 +165,4 @@ footer p {
     font-weight: 600;
     text-align: center;
     font-size: 1.5em;
-}
-
-section:first-of-type {
-    background: var(--conteiners);
-    border-radius: 8px;
-    padding: 24px;
-    margin-bottom: 32px;
-    box-shadow: 0 2px 8px rgba(96, 139, 218, 0.08);
 }
