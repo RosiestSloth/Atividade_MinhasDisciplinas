@@ -4,24 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
 
 :root {
-    --fundo: #181f2a;
-    --cor-Principal: #f7df1e;
-    --texto: #222;
-    --destaque: #ffe066;
-    --container: #fffbe7;
-    --borda: #e2c300;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    & h1 {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    --fundo-node: #222e1e;
+    --cor-Principal-node: #68a063;
+    --texto-node: #eafbe7;
+    --destaque-node: #8cc84b;
+    --container-node: #2d3b27;
+    --borda-node: #8cc84b;
 }
 
 a img {
@@ -34,9 +22,22 @@ a img:hover {
     transform: scale(1.1);
 }
 
+header {
+    background-color: var(--cor-Principal-node);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    & h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 body {
-    background: var(--fundo);
-    color: var(--texto);
+    background: var(--fundo-node);
+    color: var(--texto-node);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -47,21 +48,23 @@ h1 {
     font-size: 2.8em;
     font-weight: 800;
     margin: 0;
+    color: var(--destaque-node);
+    text-shadow: 1px 2px 8px #0006;
 }
 
 main {
     max-width: 900px;
     margin: 30px auto;
-    background: var(--container);
+    background: var(--container-node);
     border-radius: 10px;
-    box-shadow: 0 0 12px #0002;
+    box-shadow: 0 0 12px #0003;
     padding: 30px 25px;
-    border: 1.5px solid var(--borda);
+    border: 1.5px solid var(--borda-node);
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
-    color: var(--cor-Principal);
+    color: var(--destaque-node);
     margin-top: 30px;
     margin-bottom: 10px;
     font-size: 1.6em;
@@ -79,8 +82,8 @@ ul {
 }
 
 pre {
-    background: #222;
-    color: #f7df1e;
+    background: #181f14;
+    color: #8cc84b;
     padding: 15px;
     border-radius: 6px;
     overflow-x: auto;
@@ -94,8 +97,8 @@ code {
 }
 
 a#links {
-    color: #222;
-    background: var(--destaque);
+    color: var(--texto-node);
+    background: var(--cor-Principal-node);
     padding: 2px 7px;
     border-radius: 4px;
     text-decoration: none;
@@ -103,5 +106,5 @@ a#links {
 }
 
 a#links:hover {
-    background: var(--cor-Principal);
+    background: var(--destaque-node);
 }

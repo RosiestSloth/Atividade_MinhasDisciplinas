@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js | Minhas Disciplinas</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/StyleNode.css">
+</head>
+
+<body>
+    <header>
+        <a href="/index.html"><img src="/imgs/svgs/Seta-Esquerda.svg" alt="Seta para esquerda"></a>
+        <h1>Node.js</h1>
+    </header>
+    <main>
+        <article>
+            <section>
+                <h2>O que é Node.js?</h2>
+                <p>
+                    Node.js é uma plataforma construída sobre o motor V8 do Google Chrome que permite executar código
+                    JavaScript no servidor. Ele é amplamente utilizado para criar aplicações web escaláveis, APIs e
+                    sistemas em tempo real.
+                </p>
+            </section>
+            <section>
+                <h2>História e Evolução</h2>
+                <p>
+                    Criado em 2009 por Ryan Dahl, o Node.js revolucionou o desenvolvimento backend ao permitir que
+                    desenvolvedores utilizassem JavaScript fora do navegador. Desde então, tornou-se uma das principais
+                    tecnologias para servidores e aplicações modernas.
+                </p>
+            </section>
+            <section>
+                <h2>Principais Características</h2>
+                <ul>
+                    <li>Baseado em eventos e orientado a assincronicidade</li>
+                    <li>Alta performance graças ao motor V8</li>
+                    <li>Grande ecossistema de módulos via npm</li>
+                    <li>Utiliza JavaScript no backend</li>
+                    <li>Ideal para aplicações em tempo real</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Exemplo Básico</h2>
+                <p>Veja um exemplo simples de servidor HTTP com Node.js:</p>
+                <pre>
+<code>
+const http = require('http');
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Olá, este é um servidor Node.js!');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Servidor rodando em http://${hostname}:${port}/`);
+});
+</code>
+                </pre>
+            </section>
+            <section>
+                <h2>Onde o Node.js é Utilizado?</h2>
+                <ul>
+                    <li>APIs e servidores web</li>
+                    <li>Aplicações em tempo real (chats, jogos, etc.)</li>
+                    <li>Ferramentas de automação e CLI</li>
+                    <li>Microserviços</li>
+                    <li>Internet das Coisas (IoT)</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Principais Frameworks e Bibliotecas</h2>
+                <ul>
+                    <li><strong>Express</strong> – Framework minimalista para servidores web</li>
+                    <li><strong>NestJS</strong> – Framework para aplicações escaláveis</li>
+                    <li><strong>Socket.io</strong> – Comunicação em tempo real</li>
+                    <li><strong>Koa</strong> – Framework moderno e leve</li>
+                    <li><strong>PM2</strong> – Gerenciamento de processos Node.js</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Curiosidades</h2>
+                <ul>
+                    <li>Node.js utiliza um modelo de I/O não bloqueante, ideal para aplicações escaláveis.</li>
+                    <li>O npm, gerenciador de pacotes do Node.js, é um dos maiores repositórios de software do mundo.
+                    </li>
+                    <li>Grandes empresas como Netflix, LinkedIn e Uber utilizam Node.js em suas aplicações.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a id="links" href="https://nodejs.org/pt-br/" target="_blank">Site oficial do Node.js</a></li>
+                    <li><a id="links" href="https://nodebr.org/" target="_blank">NodeBR - Comunidade brasileira</a></li>
+                    <li><a id="links" href="https://www.w3schools.com/nodejs/" target="_blank">W3Schools Node.js Tutorial</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Todos os direitos reservado | Desenvolvido por © Vinicius</p>
+    </footer>
+</body>
+
+</html>
