@@ -41,9 +41,13 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: clamp(1.2rem, 2vw + 1rem, 3rem);
     font-weight: 800;
     color: white;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
 
 h2 {

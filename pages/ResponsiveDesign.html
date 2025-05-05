@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Responsivo</title>
+    <link rel="stylesheet" href="/styles/Responsive.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="/index.html"><img src="/imgs/svgs/Seta-Esquerda.svg" alt="Seta para esquerda"></a>
+        <h1>Design Responsivo</h1>
+    </header>
+
+    <main class="container">
+        <h1>Design Responsivo</h1>
+        <p>
+            O <strong>Design Responsivo</strong> garante que sites funcionem bem em qualquer dispositivo, adaptando o
+            layout conforme o tamanho da tela.
+        </p>
+
+        <h2>Principais Conceitos</h2>
+        <ul>
+            <li><strong>Media Queries:</strong> CSS que adapta estilos para diferentes tamanhos de tela.</li>
+            <li><strong>Layout Fluido:</strong> Uso de unidades relativas como <code>%</code> e <code>em</code>.</li>
+            <li><strong>Imagens Responsivas:</strong> Imagens que se ajustam ao container.</li>
+            <li><strong>Mobile First:</strong> Comece o design pelo mobile e expanda para telas maiores.</li>
+        </ul>
+
+        <h2>Exemplo de Media Query</h2>
+        <pre><code>
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}
+        </code></pre>
+
+        <h2>Dicas para um Design Responsivo</h2>
+        <ul>
+            <li>Evite larguras fixas.</li>
+            <li>Use <code>flexbox</code> ou <code>grid</code> para layouts flexíveis.</li>
+            <li>Teste em diferentes dispositivos.</li>
+            <li>Inclua a meta tag viewport no HTML.</li>
+        </ul>
+
+        <h2>Referências</h2>
+        <ul>
+            <li><a id="links" href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Responsive_Design"
+                    target="_blank">MDN Web Docs: Design Responsivo</a></li>
+            <li><a id="links" href="https://www.w3schools.com/css/css_rwd_intro.asp" target="_blank">W3Schools:
+                    Responsive Web
+                    Design</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservado | Desenvolvido por © Vinicius</p>
+    </footer>
+</body>
+
+</html>

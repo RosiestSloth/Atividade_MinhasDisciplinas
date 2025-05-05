@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* Importando fontes já utilizadas no projeto */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
+
+:root {
+    --fundo: #181f2a;
+    --cor-Principal: #3178c6;
+    --texto: #222;
+    --destaque: #b3dafe;
+    --container: #f3faff;
+    --borda: #3178c6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    & h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 100ms ease-in-out;
+}
+
+a img:hover {
+    transform: scale(1.1);
+}
+
+body {
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8em;
+    font-weight: 800;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: var(--container);
+    border-radius: 10px;
+    box-shadow: 0 0 12px #0002;
+    padding: 30px 25px;
+    border: 1.5px solid var(--borda);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-Principal);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+}
+
+ul,
+p {
+    font-size: 1.08em;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+pre {
+    background: #222;
+    color: #b3dafe;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 1em;
+    margin-bottom: 18px;
+}
+
+code {
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    font-size: 1em;
+}
+
+a#links {
+    color: #222;
+    background: var(--destaque);
+    padding: 2px 7px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+a#links:hover {
+    background: var(--cor-Principal);
+}
