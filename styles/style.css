@@ -36,7 +36,9 @@ body {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--titulos);
 }
 
@@ -154,3 +156,10 @@ footer p {
     font-size: 1.5em;
 }
 
+section:first-of-type {
+    background: var(--conteiners);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 8px rgba(96, 139, 218, 0.08);
+}
