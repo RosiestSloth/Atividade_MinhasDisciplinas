@@ -44,7 +44,7 @@ h3 {
 }
 
 h1 {
-    font-size: clamp(1.2rem, 2vw + 1rem, 3rem);
+    font-size: clamp(1rem, 2vw + 1rem, 3rem);
     font-weight: 800;
     color: white;
 }
@@ -164,5 +164,5 @@ footer p {
     color: white;
     font-weight: 600;
     text-align: center;
-    font-size: 1.5em;
+    font-size: clamp(0.5rem, 1.5vw + 0.5rem, 3rem);
 }
