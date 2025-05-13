@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Conversor de Moedas
+        </h1>
+    </header>
+    <main>
+        <section>
+            <form action="" method="get">
+                <p>
+                    Valor:
+                </p>
+                <input type="number" name="Valor" id="Valor" placeholder="Digite o valor">
+                <p>
+                    De:
+                </p>
+                <select name="De" id="De">
+                    <option value="USD">
+                        Real Brasileiro (BRL)
+                    </option>
+                    <option value="BRL">
+                        Dólar Americano (USD)
+                    </option>
+                </select>
+                <p>
+                    Para:
+                </p>
+                <select name="Para" id="Para">
+                    <option value="USD">
+                       Real Brasileiro (BRL)
+                    </option>
+                    <option value="BRL">
+                        Dólar Americano (USD)
+                    </option>
+                </select>
+                <button type="submit">
+                    Converter
+                </button>
+                <p id="resultado">
+                
+                </p>
+                <p id="Aviso">
+                    
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Conversor de Moedas Simples.
+    </footer>
+</body>
+</html>
+
+<script src="script.js" defer></script>
