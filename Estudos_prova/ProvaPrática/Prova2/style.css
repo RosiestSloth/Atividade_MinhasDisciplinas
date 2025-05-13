@@ -1,0 +1,86 @@
+:root {
+    --cor-fundo: #f4f4f4;
+    --cor-texto: #333;
+    --cor-header: #007bff;
+    --cor-header-texto: white;
+    --cor-botao-adicionar: #28a745;
+    --cor-botao-adicionar-hover: #1e7e34;
+    --cor-botao-remover: #dc3545;
+    --cor-botao-remover-hover: #c82333;
+    --cor-botao-concluir: #ffc107;
+    --cor-botao-concluir-hover: #e0a800;
+    --cor-texto-concluido: #777;
+    --cor-erro: #dc3545;
+    --cor-footer-texto: #777;
+    --cor-bordo: #ccc;
+    --cor-bordo-bottom: #eee;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--cor-header);
+    color: var(--cor-header-texto);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+section#adicionar-tarefa {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid var(--cor-bordo);
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+button {
+    background-color: var(--cor-botao-adicionar);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    width: 103%;
+    cursor: pointer;
+    transition: background-color 100ms ease;
+    border-radius: 0.25rem;
+}
+
+button:hover {
+    background-color: var(--cor-botao-adicionar-hover);
+}
+
+@media (max-width: 37.5rem) { /* 600px */
+    main {
+        margin: 0;
+    }
+}
