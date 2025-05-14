@@ -14,9 +14,17 @@
         <section id="contador-container">
             <p id="valor-contador">0</p>
             <div class="botoes-controle">
-                <button id="incrementar-btn">Incrementar</button>
-                <button id="decrementar-btn">Decrementar</button>
-                <button id="resetar-btn">Resetar</button>                
+                <div id="incremento-decremento">
+                    <button
+                    onclick="incrementar()"
+                    id="incrementar-btn">Incrementar</button>
+                    <button
+                    onclick="decrementar()"
+                    id="decrementar-btn">Decrementar</button>
+                </div>
+                <button 
+                onclick="resetar()"
+                id="resetar-btn">Resetar</button>                
             </div>
             <div id="erro-mensagem" class="erro"></div>
         </section>
