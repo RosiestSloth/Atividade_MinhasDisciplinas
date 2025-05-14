@@ -1,0 +1,24 @@
+:root {
+    --cor-fundo: #f4f4f4;
+    --cor-texto: #333;
+    --cor-header: #007bff;
+    --cor-header-texto: white;
+    --cor-contador: #28a745;
+    --cor-botao-incrementar: #28a745;
+    --cor-botao-incrementar-hover: #1e7e34;
+    --cor-botao-decrementar: #dc3545;
+    --cor-botao-decrementar-hover: #c82333;
+    --cor-botao-resetar: #ffc107;
+    --cor-botao-resetar-hover: #e0a800;
+    --cor-erro-fundo: #007bff;
+    --cor-erro-texto: #FFFFFF;
+    --cor-footer-texto: #777;
+    --cor-bordo: #ccc;
+}
+
+
+@media (max-width: 30rem) { /* 480px */
+    .botoes-controle button {        
+        margin: 5px; 
+    }
+}
