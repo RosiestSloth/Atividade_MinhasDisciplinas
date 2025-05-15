@@ -44,7 +44,6 @@ h1 {
 
 p#valor-contador {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
     color: var(--cor-contador);
     margin-bottom: 1rem;
@@ -55,6 +54,11 @@ p#valor-contador {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+}
+
+button {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #incremento-decremento {
@@ -71,7 +75,6 @@ p#valor-contador {
     border: none;
     border-radius: 0.3rem;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     transition: background-color 50ms ease;
 }
@@ -82,7 +85,6 @@ p#valor-contador {
     border: none;
     border-radius: 0.3rem;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     transition: background-color 50ms ease;
 }
@@ -93,7 +95,6 @@ p#valor-contador {
     border: none;
     border-radius: 0.3rem;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     transition: background-color 50ms ease;
 }
@@ -131,5 +132,5 @@ footer {
     margin-top: 1rem;
     color: var(--cor-footer-texto);
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }
